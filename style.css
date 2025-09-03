@@ -28,23 +28,42 @@ body {
 }
 
 @keyframes gradienteAnimado {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .emoji {
   /* position: fixed; */
-  bottom: 20px;
-  right: 20px;
-  width: 350px;
+  /* bottom: 20px;
+  right: 20px; */
+  width: 400px;
+  height: auto;
   animation: flutuar 3s ease-in-out infinite;
 }
 
+.cabecalho p {
+  max-width: 600px;
+  font-size: 1.2rem;
+  text-align: justify;
+  align-items: flex-start;
+}
+
 @keyframes flutuar {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-15px);
   }
@@ -60,7 +79,13 @@ body {
   padding: 1.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   /* centraliza horizontalmente */
+}
+
+.navegacao img{
+  height: 50px;
 }
 
 .menu {
@@ -104,6 +129,16 @@ body {
   text-align: center;
 }
 
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  flex-direction: row-reverse;
+}
+
 h1 {
   font-size: 3.5rem;
   color: white;
@@ -144,19 +179,20 @@ h1 {
 
 .projetos {
   display: flex;
-  justify-content: center; 
-  align-items: center;    
-  flex-direction: column;  
-  min-height: 50vh;        
-  text-align: center;     
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 50vh;
+  text-align: center;
 }
+
 .projetosSecao ul {
-  list-style: none; 
+  list-style: none;
   padding: 0;
 }
 
 .projetosSecao li {
-  margin: 10px 0; 
+  margin: 10px 0;
 }
 
 .projetosSecao a {
@@ -176,9 +212,7 @@ h1 {
   margin: 0 auto;
 }
 
-.contatos {
-  
-}
+.contatos {}
 
 .contatosTitulo {
   text-align: center;
@@ -211,7 +245,7 @@ h1 {
 
 .campoForm:focus {
   border-color: var(--secundaria);
-  box-shadow: 0 0 10px  rgba(20, 0, 14, 0.8);
+  box-shadow: 0 0 10px rgba(20, 0, 14, 0.8);
 }
 
 .botaoForm {
@@ -227,13 +261,14 @@ h1 {
 
 }
 
-.botaoForm:hover{
+.botaoForm:hover {
   transform: translateY(-4px);
-  box-shadow: 0 5px 15px  rgba(20, 0, 14, 0.8);
+  box-shadow: 0 5px 15px rgba(20, 0, 14, 0.8);
 }
 
 .redes {
-  margin: 2rem auto 0 auto; /* <-- centraliza no meio da section */
+  margin: 2rem auto 0 auto;
+  /* <-- centraliza no meio da section */
   text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
@@ -268,16 +303,16 @@ h1 {
 
 .redes-lista li a:hover {
   transform: scale(1.1);
-  color: #20001f; 
+  color: #20001f;
   cursor: pointer;
 }
 
 
 footer {
   display: flex;
-  justify-content: center; 
-  align-items: center;      
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   text-align: center;
-  background-color: rgba(20, 0, 14, 0.8);
+  background-color:black;
 }
